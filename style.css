@@ -1,20 +1,103 @@
-.footer {
-    display: flex;
-    align-items: center;
+
+
+.container {
+    display: grid;
     max-width: 1440px;
     width: 100%;
-    height: auto;
-    margin: 0 auto;
-    background: white
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(21, 180px);
 }
 
-.footer-input {
-    display: grid;
-    grid-template-columns: 720px 720px;
-    width: 100%;
-    position: relative;
-    gap: 40px;
+#box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 1/5;
+    background-color: white;
+   
 }
+
+#box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 1/6;   
+    background-color: #94BADB;
+}
+
+#box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 5/9;
+    background-color: #02135C;
+    color: white;
+}
+#box4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 6/10;   
+    background-color: #EEEEF0 ;
+}
+#box5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 9/15;
+    background-color: #78C8FB;
+}
+
+#box6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 10/14;   
+   background-color: #02135C;
+    color: white;
+}
+
+#box7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 15/19;
+    background-color: #EEEEF0 ;
+}
+#box8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 14/19;   
+   background-color:  #94BADB;   
+}
+
+#box9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 19/21;
+    background-color: white;
+}
+
+#box10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/23;
+    grid-row: 19/21;
+    background-color: white;
+}
+
 
 .footer-left,
 .footer-right {
