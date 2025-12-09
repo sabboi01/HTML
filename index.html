@@ -38,13 +38,60 @@
                     <button>blabla</button>
                 </div>
             </div>
+
             <div id="box2">Går du og tænker varmepumpe?</div>
+
             <div id="box3">Føl dig tryg i processen!</div>
+
             <div id="box4">Klar til tilskud? </div>
+
             <div id="box5">Hvorfor vælge mig?</div>
+
             <div id="box6">Typisk hjælper jeg med</div>
-            <div id="box7">Trustpilot</div>
-            <div id="box8">Udfyld formularen herunder</div>
+
+
+
+            <div id="box7">
+                <div class="review-wrapper">
+                    <div class="quote-icon left">“</div>
+                    <div class="review">Han lyttede til vores ønsker, gav værdifuld
+                        rådgivning og udførte arbejdet med største omhu og præcision. <br>
+                        Resultatet var fantastisk, og det hele blev gjort med en personlig touch, der fik os til at føle
+                        os
+                        trygge hele vejen igennem.</div>
+                    <div class="name">Kurt Hansen</div>
+                    <div class="quote-icon right">”</div>
+                </div>
+                <div class="stars">
+                    <img src="5-stars.png" alt="5 stars">
+                </div>
+                <div class="trustpilot">
+                    <img src="star.png" alt="Star">
+                    <span>Trustpilot</span>
+                </div>
+                <button class="review-btn">Se mine anmeldelser</button>
+            </div>
+
+
+
+
+
+            </div>
+            <div id="box8">
+                <div class="form-container">
+                    <h2>Udfyld formularen herunder, og jeg vender tilbage til dig.</h2>
+                    <form action="#" method="post" enctype="text/plain">
+                        <input type="text" name="Navn" placeholder="Navn" required>
+                        <div class="row">
+                            <input type="text" name="Telefon" placeholder="Telefon">
+                            <input type="email" name="Email" placeholder="E-mail" required>
+                        </div>
+                        <textarea name="Besked" placeholder="Meddelelse" required></textarea>
+                        <button id="klik-her" type="submit">Varmepumpe luft-til-luft <br>
+                            Tilbud lige nu - KLIK HER</button>
+                    </form>
+                </div>
+            </div>
             <div id="box9">
                 <div class="footer-left">
                     <h2>Kontakt</h2>
@@ -65,17 +112,20 @@
                         <li><a href="#"> - Totalløsninger</a></li>
                         <li><a href="#"> - Energivejledning</a></li>
                     </ul>
-                </div>
-                <div class="footer-til-top">
-                    <a href="#Top">
+                    <a href="#Top" class="footer-til-top">
                         <img src="up.png" alt="Til top">
                         <span>Til<br>TOP</span>
                     </a>
                 </div>
-
             </div>
         </section>
     </main>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+        });
+    </script>
 </body>
 
 </html>
