@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
     background-color: white;
     color: #000B38;
@@ -73,8 +73,6 @@ a {
 
 .button-nav {
     padding: 20px 50px;
-    margin-right: auto;
-    margin-left: 120px;
     background: #F9B608;
     border: none;
     font-size: 18px;
@@ -101,14 +99,54 @@ a {
     background: #27a875;
 }
 
+.button3 {
+    margin-top: 60px;
+    padding: 20px 50px;
+    margin-right: auto;
+    margin-left: 120px;
+    background: #F9B608;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button3:hover {
+    background: #e0a206;
+}
+
+.button-til-top {
+    position: fixed;
+    right: 50px;
+    bottom: 200px;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 2px;
+    background: #F9B608;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.button-til-top:hover {
+    background: #e0a206;
+}
+
 header {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    max-width: 1440px;
     width: 100%;
     padding: 40px 120px;
     height: 100px;
+}
+
+.logo {
+    flex: 1;
 }
 
 .logo img {
@@ -117,9 +155,10 @@ header {
 
 .nav-links {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     list-style: none;
     gap: 60px;
+    flex: 1;
 }
 
 .nav-links a {
@@ -127,21 +166,31 @@ header {
     color: #000B38;
 }
 
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 120px;
+}
 .hero-video {
     display: flex;
     justify-content: flex-start;
-    margin: auto;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
 }
 
 .hero-video video {
-    max-width: 1440px;
-    width: 100%;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
+
 }
 
 .container {
     display: grid;
-    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(21, 180px);
@@ -438,60 +487,42 @@ textarea {
     opacity: 0.7;
 }
 
-.footer-til-top {
-    display: flex;
-    flex-direction: column;
-    right: 20px;
-    bottom: 20px;
-}
-
 .footer-til-top img {
     width: 35px;
     height: auto;
 }
 
-.footer-til-top a:hover {
-    opacity: 0.7;
+
+#box1:hover {
+    background-color: whitesmoke
 }
 
-.footer-til-top span {
-    font-size: 20px;
-    margin-top: 2px;
-    display: block;
-    text-decoration: none;
-    text-align: center;
-}
-
-
-#box1:hover { 
-    background-color:whitesmoke 
-}
-
-#box2:hover { 
+#box2:hover {
     background-color: #9ac2e5
 }
 
-#box3:hover { 
-    background-color: #04176c 
-}
-#box4:hover { 
-    background-color: #ffffff 
+#box3:hover {
+    background-color: #04176c
 }
 
-#box5:hover { 
-    background-color: #84cefb 
+#box4:hover {
+    background-color: #ffffff
 }
 
-#box6:hover { 
-    background-color: #04176c  
+#box5:hover {
+    background-color: #84cefb
 }
 
-#box7:hover { 
-    background-color: #ffffff 
+#box6:hover {
+    background-color: #04176c
 }
 
-#box8:hover { 
-    background-color: #9ac2e5 
+#box7:hover {
+    background-color: #ffffff
+}
+
+#box8:hover {
+    background-color: #9ac2e5
 }
 
 
@@ -504,6 +535,7 @@ textarea {
     #martin-mobile {
         visibility: hidden;
     }
+
     #martin2-mobile {
         visibility: hidden;
     }
@@ -540,11 +572,11 @@ textarea {
     }
 
 
-    
+
 
     .container {
-       display: flex;
-       flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
     #box1,
@@ -553,24 +585,24 @@ textarea {
     #box4,
     #box5,
     #box6,
-    #box7,   
+    #box7,
     #box9,
     #box10 {
-     padding: 40px 20px;
+        padding: 40px 20px;
     }
 
-    #box3 ul p, 
+    #box3 ul p,
     #box5 ul p,
     #box6 ul p {
         text-align: left;
 
     }
- 
+
 
     #box8 form {
         display: flex;
         flex-direction: column;
-        padding: 40px 20px ;
+        padding: 40px 20px;
     }
 
     #box8 .button1 {
@@ -578,14 +610,14 @@ textarea {
     }
 
     #box10 {
-    position: relative;
-}
+        position: relative;
+    }
 
-.footer-til-top {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-}
+    .footer-til-top {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
 
     h1 {
         font-size: 30px;
@@ -608,44 +640,45 @@ textarea {
     .ikonbox4,
     .box5-icon,
     .box6-icon {
-      visibility: hidden;
+        visibility: hidden;
     }
 
     .quote-icon {
         display: none;
-}
+    }
 
 
-#box1:hover { 
-    background-color:whitesmoke 
-}
+    #box1:hover {
+        background-color: whitesmoke
+    }
 
-#box2:hover { 
-    background-color: #9ac2e5
-}
+    #box2:hover {
+        background-color: #9ac2e5
+    }
 
-#box3:hover { 
-    background-color: #04176c 
-}
-#box4:hover { 
-    background-color: #ffffff 
-}
+    #box3:hover {
+        background-color: #04176c
+    }
 
-#box5:hover { 
-    background-color: #84cefb 
-}
+    #box4:hover {
+        background-color: #ffffff
+    }
 
-#box6:hover { 
-    background-color: #04176c  
-}
+    #box5:hover {
+        background-color: #84cefb
+    }
 
-#box7:hover { 
-    background-color: #ffffff 
-}
+    #box6:hover {
+        background-color: #04176c
+    }
 
-#box8:hover { 
-    background-color: #9ac2e5 
-}
+    #box7:hover {
+        background-color: #ffffff
+    }
+
+    #box8:hover {
+        background-color: #9ac2e5
+    }
 
 
 }
