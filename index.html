@@ -19,6 +19,7 @@
 
 </head>
 
+
 <body>
     <div id="Top"></div>
     <header>
@@ -35,13 +36,15 @@
                 <li><a href="#">Referencer</a></li>
             </ul>
         </nav>
+         <div class="nav-right">
         <button class="button-nav" type="button">Ring til mig</button>
          <img id="menu-mobile" src="burger.png" alt="burger">
+         </div>
     </header>
 
     <section class="hero-video">
-        <video autoplay muted loop src="Eksamensprojekt - martin moeller.mp4"></video>
-          <img id="martin-mobile" src="Martin-mobile.JPG" alt="martin" width="1440px">
+        <video autoplay muted loop playsinline src="Eksamensprojekt - martin moeller.mp4"></video>
+          <img id="martin-mobile" src="Martin-mobile.JPG" alt="martin">
     </section>
 
     <main>
@@ -206,7 +209,7 @@
                             <input type="email" name="Email" placeholder="E-mail" required>
                         </div>
                         <textarea name="Besked" placeholder="Meddelelse" required></textarea>
-                        <button class="button1" type="submit">Varmepumpe luft-til-luft <br>
+                        <button class="button3" type="submit">Varmepumpe luft-til-luft <br>
                             Tilbud lige nu - KLIK HER</button>
                     </form>
                 </div>
@@ -235,19 +238,19 @@
                         <li><a href="#"> - Energivejledning</a></li>
                     </ul>
                 </div>
-                <div>
-                    <a href="#Top" class="footer-til-top">
+                
+            </div>
+<div>
+                    <a href="#Top" class="button-til-top">
                         <img src="icon-up.png" alt="Til top">
                         <span>Til<br>TOP</span>
                     </a>
                 </div>
-            </div>
-
         </section>
     </main>
 
     <script>
-        document.getElementById("contactForm").addEventListener("submit", function (e) {
+        document.getElementById("contaktForm").addEventListener("submit", function (e) {
             e.preventDefault();
         });
     </script>
